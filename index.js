@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
-const { token, prefix } = require('./config.json');
+const { prefix } = require('./config.json');
 const afk = require('./commands/afk.js'); // Dosya yolu doğru olmalı
 const snipes = new Map(); // Snipe için Map tanımlandı
 
@@ -232,4 +232,4 @@ afk.checkAFKStatus(client);
 });
 
 // Botu başlatma
-client.login(token);
+client.login(process.env.token);
