@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const express = require('express');
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const { prefix } = require('./config.json');
 const afk = require('./commands/afk.js'); // Dosya yolu doğru olmalı
